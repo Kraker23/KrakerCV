@@ -62,3 +62,57 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+.personal {
+    background: url('Imagenes/account.png') no-repeat 50% 50%;
+    background-size: 24px 24px;
+    display: inline-block;
+    align-content: center;
+    height: 24px;
+    width: 24px;
+}
+
+.estudios {
+    background: url('Imagenes/menu_book.png') no-repeat 50% 50%;
+    background-size: 24px 24px;
+    display: inline-block;
+    align-content: center;
+    height: 24px;
+    width: 24px;
+}
+
+.trabajos {
+    background: url('Imagenes/work_history.png') no-repeat 50% 50%;
+    background-size: 24px 24px;
+    display: inline-block;
+    align-content: center;
+    height: 24px;
+    width: 24px;
+}
+
+.contacto {
+    background: url('Imagenes/share.png') no-repeat 50% 50%;
+    background-size: 24px 24px;
+    display: inline-block;
+    align-content: center;
+    height: 24px;
+    width: 24px;
+}
+
+.herramienta {
+    background: url('Imagenes/herramienta.png') no-repeat 50% 50%;
+    background-size: 24px 24px;
+    display: inline-block;
+    align-content: center;
+    height: 24px;
+    width: 24px;
+}
+
+.divImg {
+    
+    background-size: 24px 24px;
+    display: inline-block;
+    align-content: center;
+    height: 24px;
+    width: 24px;
+}

@@ -1,0 +1,48 @@
+name: dotnet package
+
+on: 
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: [  '6.0.x' ]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup dotnet ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+          
+          
+      # You can test your matrix by printing the current dotnet version
+      - name: Display dotnet version
+        run: dotnet --version
+       
+      # publishes Blazor project to the release-folder
+     # - name: Publish .NET Core Project
+      #  run: dotnet publish BlazorApp1.csproj -c Release -o release --nologo
+      
+        # changes the base-tag in index.html from '/' to 'TestBlazor4' to match GitHub Pages repository subdirectory
+      - name: Change base-tag in index.html from / to KrakerCV
+        run: sed -i 's/<base href="\/" \/>/<base href="\/KrakerCV\/" \/>/g' index.html
+        
+         # copy index.html to 404.html to serve the same file when a file is not found
+      - name: copy index.html to 404.html
+        run: cp index.html wwwroot/404.html
+        
+       # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
+      - name: Add .nojekyll file
+        run: touch .nojekyll
+        
+      - name: Commit wwwroot to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: wwwroot

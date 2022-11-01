@@ -7,10 +7,10 @@
 @if (datos?.trabajos == null)
 {
     <p><em>Loading...</em></p>
-    <RadzenProgressBar  ProgressBarStyle="ProgressBarStyle.Success" Value="100" ShowValue="false" Mode="ProgressBarMode.Indeterminate" />
+    <RadzenProgressBar ProgressBarStyle="ProgressBarStyle.Success" Value="100" ShowValue="false" Mode="ProgressBarMode.Indeterminate" />
 }
 else
-{ 
+{
 
     <RadzenDataList WrapItems="true" AllowPaging="false" Data="@data" TItem="Trabajo">
         <Template Context="trabajo">
@@ -18,24 +18,25 @@ else
                 <div class="d-flex flex-row align-items-center">
                     <RadzenImage Path="@trabajo.Foto" Class="rounded-circle float-left mr-3" Style="width: 80px; height: 80px;" />
                     <div>
-                    <h4 class="mb-0">@(trabajo.puesto)</h4>
-                    <div>@trabajo.empresa</div>
-                        <div style="font-size: .8em">@(trabajo.poblacion), @(trabajo.fechaInicio.ToString("dd/MM/yyyy")) - (@trabajo.fechaFinal!=null ? @(trabajo.fechaFinal.ToString("dd/MM/yyyy")): "Aqui sigo :D")</div>
+                        <h4 class="mb-0">@(trabajo.puesto)</h4>
+                        <div>@trabajo.empresa</div>
+                        <div style="font-size: .8em">@(trabajo.poblacion), @(trabajo.fechaInicio.ToString("dd/MM/yyyy")) - @getFecha(trabajo.fechaInicio,trabajo.fechaFinal)</div>
+
                     </div>
                 </div>
                 <hr style="border:solid ; background-color: black; height: 0px; " />
                 <div class="row">
                     <p style="text-decoration-line:underline">Trabajos Realizados :</p>
                     <div>
-                    <ul>
+                        <ul>
                             @for (int i = 0; i < trabajo.trabajosRealizado.Count; i++)
-                        {
+                            {
                                 <li>@trabajo.trabajosRealizado[i]</li>
-                        }
+                            }
                         </ul>
                     </div>
                 </div>
-               
+
             </RadzenCard>
         </Template>
     </RadzenDataList>
@@ -52,6 +53,20 @@ else
         {
             data = datos.trabajos;
         }
+    }
+
+    public string getFecha(DateTime fechaInicio, DateTime fechaFinal)
+    {
+        //@((trabajo.fechaFinal != null) ? (trabajo.fechaFinal.ToString("dd/MM/yyyy"): ("Aqui sigo :D")))
+        string result = string.Empty;
+        if (fechaFinal != null && fechaInicio<fechaFinal)
+        {
+            result = fechaFinal.ToString("dd/MM/yyyy");
+        }
+        else{
+            result = "Aqui sigo 😜";
+        }
+        return result;
     }
 
 }

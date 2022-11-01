@@ -1,9 +1,26 @@
 ﻿@page "/"
-
+@inject HttpClient Http
+@inject NavigationManager NavManager
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1 align="center">Hola 👋, Soy Cristian, Bienvenido a mi Currículum Vitae Web</h1>
 
-Welcome to your new app.
+<br />
+<h3 align="center">
+    <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px">
+    Un apasionado desarrollador Full-stack .net de Barcelona
+</h3>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<h6 align="center">
+    Actualmente como Responsable del departamento de programación
+</h6>
+
+<SurveyPrompt Title="Que te parece?" />
+
+
+@code{
+    protected override void OnInitialized()
+    {
+        NavManager.NavigateTo("/DatosPersonales");
+    }
+}

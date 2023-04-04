@@ -47,7 +47,7 @@
       "poblacion": "Barcelona",
       "fechaInicio": "2015-09-01T00:00:00",
       "fechaFinal": "2017-06-25T00:00:00",
-      "explicacion": [ "Enseñanza sobre programación en Java","Instalación de sistemas operativos","Diseño de paginas webs","Practicas de formación Dual en Eskape Consulting SL." ],
+      "explicacion": [ "Enseñanza sobre programación en Java","Instalación de sistemas operativos","Diseño de paginas webs","Practicas de formación Dual en Eskape IT Services." ],
         "extra":[ "Proyecto final sobre IoT , siendo finalistas de la 3º edición del Innolab (Citilab - Baix Llobregat) a proyecto más innovador.","Ganadores del concurso BIZZ DE BARCELONA sobre proyecto más innovador." ]
     }
   ],
@@ -69,51 +69,49 @@
     },
     {
       "Foto": "https://www.rapidrivas.es/wp-content/uploads/2015/12/cerrajeria-min.jpg",
-      "puesto": "Cerrajero ayudante",
+      "puesto": "Ayudante de Cerrajero",
       "empresa": "Empresa de Cerrajeria",
       "poblacion": "Sabadell",
       "fechaInicio": "2015-06-01T00:00:00",
       "fechaFinal": "2016-06-01T00:00:00",
       "trabajosRealizado": [
-        "Ayuda a un familiar en el tema de gestionar citas con los clientes para poder efectuar las incidencias",
-        "Revisar material",
-        "Preparar rutas de trabajo",
-        "Gestionar facturacion.",
-        "Reparacion de Cerraduras"
+        "Soporte a un negocio familiar, y gestionar con los clientes el horario de actuacion",
+        "Preparacion de equipamiento para desplazamientos",
+        "Gestionar y optimizar salidas del equipo",
+        "Gestionar facturacion."
       ]
     },
     {
       "Foto": "https://media-exp1.licdn.com/dms/image/C4E1BAQHv5fGsb-22Xg/company-background_10000/0/1611223767997?e=2147483647&v=beta&t=wr0zdJzfs9XvPQsdnC5prfR7C4reldWdxBwYBguoYZk",
       "puesto": "Programador",
-      "empresa": "ESKAPE CONSULTING S.L.",
+      "empresa": "ESKAPE IT SERVICES",
       "poblacion": "Barcelona",
       "fechaInicio": "2016-06-01T00:00:00",
       "trabajosRealizado": [
         "Creación y mantenimiento de páginas internas de la empresa para el servicio Itil, con tecnología MVC",
-        "Desarrollo de la parte de Reporting de un programa para las ITVs",
+        "Desarrollar y gestionar la parte de Reporting de un programa para las ITVs",
         "Mantenimiento y desarrollo de un programa dedicado a los anuncioas (Television y Internet). De mas de 15 años de desarrollo",
-        "Mantenimiento de su respectiva base de datos. Con uso diario, con mas de 300 usuarios activos al día. Y resoluciónde incidencias diriamente.",
-        "Desarrollo y gestion de un proyecto para las ITVs (destinado a fuera de España). Adaptando un programa existente a una version con las necesidades del cliente nuevo",
+        "Mantenimiento de la Base de datos del Cliente. Con uso diario, con mas de 300 usuarios activos al día. Y resoluciónde incidencias diariamente.",
         "Realizar comunicacion con el cliente para evaluar requerimientos y necesidades, para adpatarlas al programa actual.",
-        "Desarrollo del proyecto con las nuevas peticiones y necesidades.",
+        "Desarrollar y gestionar la parte de Reporting de un programa para las ITVs",
+        "Adaptacion del proyecto a los nuevos requerimientos de las ITVs (destinado a fuera de España).",
         "Matenimiento de varias aplicaciones para el uso de ITVs de España"
       ]
     },
     {
       "Foto": "https://media-exp1.licdn.com/dms/image/C4E1BAQHv5fGsb-22Xg/company-background_10000/0/1611223767997?e=2147483647&v=beta&t=wr0zdJzfs9XvPQsdnC5prfR7C4reldWdxBwYBguoYZk",
       "puesto": "Responsable del Departamento Programación",
-      "empresa": "ESKAPE CONSULTING S.L.",
+      "empresa": "ESKAPE IT SERVICES",
       "poblacion": "Barcelona",
       "fechaInicio": "2021-03-01T00:00:00",
       "fechaFinal": "2023-01-01T00:00:00",
       "trabajosRealizado": [
-        "Tener a mi supervision a Programadores Juniors (de 2 a 5)",
-        "Enseñar a los Juniors",
-        "Gestionar turnos de trabajo y vacaciones",
-        "Gestionar los proyectos, e ir haciendo seguimiento de los proyectos y los clientes",
-        "Crear reuniones mensuales para ver el progreso y el estado de los integrantes del departamento",
-        "Hablar con el cliente para proponer desarrollos, soluciones, y avisos a posibles problemas que pueden tener en sus respectivas aplicaciones",
-        "Crear un procedimiento para nuevos Juniors, para ayudar a su aprendizage y su integracion en el equipo."
+        "Dupervision a un equipo de Programadores Juniors (de 2 a 5 personas)",
+        "Fromar a los Juniors",
+        "Gestion de turnos de trabajo y vacaciones",
+        "Gestion de los proyectos",
+        "Seguimiento mensual de rendimiento y el estado de los integrantes del departamento",
+        "Busqueda de soluciones para problemas actuales y futuros que pueden tener en sus respectivas aplicaciones"
       ]
     }
   ],
